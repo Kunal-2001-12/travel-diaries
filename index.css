@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-image: url('https://cdn.pixabay.com/photo/2024/11/29/09/26/earth-9232582_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    /* text-decoration: underline; */
+    background-color: #555; /* Change background color on hover */
+    padding: 5px; /* Add some padding */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* About Section */
+#about {
+    padding: 20px;
+    text-align: center;
+}
+
+#about h2 {
+    color: #444;
+}
+
+/* travel Section */
+#travel {
+    padding: 20px;
+    text-align: center;
+    background: #f1f1f1;
+}
+
+/* Blog Posts Section */
+#posts {
+    padding: 20px;
+}
+
+#posts h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.posts-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post:hover {
+    transform: scale(1.05); 
+    transition: 0.3s;
+    border-color: #0066cc; 
+}
+
+
+/* Video Section */
+#video {
+    padding: 20px;
+    text-align: center;
+    background: #f1f1f1;
+}
+
+.videos-container {
+    display: flex;
+    justify-content: center; /* Center the videos horizontally */
+    gap: 30px; /* Space between videos */
+    flex-wrap: wrap; /* Allow wrapping if the screen is small */
+}
+
+.video {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Set a max width for the video container */
+    flex: 0 1 auto; /* Allow the video containers to grow but not shrink */
+}
+
+.video video {
+    width: 100%; /* Make the video take the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.video:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+    border-color: #0066cc; 
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    border-color: #0066cc; 
+    transition: box-shadow 0.s ease, border-color 0.3s ease;  */
+}
+
+/* Contact Section */
+#contact {
+    padding: 20px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.contact-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h3 {
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    margin: 5px 0;
+}
+
+.contact-container button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-container button:hover {
+    background-color: #444;
+}
+
+.contact-container a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.contact-container a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
